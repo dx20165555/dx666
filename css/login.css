@@ -1,0 +1,115 @@
+*{
+	text-align: center;
+	color: white;
+	outline: none;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	min-height: 400px;
+	background: #fff;
+	color: #383a3c;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.25;
+	font-family: 'Raleway', Calibri, Arial, sans-serif;
+	font-family: '微软雅黑';
+}
+
+.contain {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	overflow-x: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+.container{
+	position: relative;
+	padding: 0;
+	height: 100%;
+}
+
+.contain {
+	background-image: url('../img/login-bg.jpg');
+	background-position: center bottom;
+}
+
+#canvas{
+	position: fixed;
+	bottom: 0;
+	left:0;
+}
+
+.glass{
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: inherit;
+	-moz-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    display: none;
+}
+
+.main{
+	position: relative;
+	height: 100%;
+	z-index: 3;
+	margin: auto;
+}
+
+.text{
+	position: absolute;
+	top: 50%;
+	right: 100px;
+	margin: auto;
+	margin-top: -170px;
+	max-width: 300px;
+	height: 340px;
+}
+
+.text .head{
+	margin-top: 50px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 17px;
+	text-align: left;
+	border-bottom: 2px solid white;
+}
+
+input{
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	width: 300px;
+	height: 50px;
+	background: none;
+	border: 2px solid white;
+	border-radius: 100px;
+}
+
+.login{
+	border: 2px solid #28ae61;
+	background: #28ae61;
+}
+
+@media screen and (max-width: 1024px) {
+	.glass{
+		display: block;
+	}
+	.text{
+		position: relative;
+		left: 0;
+	}
+}
+
